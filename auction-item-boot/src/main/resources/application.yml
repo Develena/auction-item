@@ -1,0 +1,26 @@
+server:
+  port: 0
+
+spring:
+  application:
+    name: auction-item
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+
+  main:
+    allow-bean-definition-overriding: true
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+    enabled: true

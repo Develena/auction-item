@@ -1,0 +1,5 @@
+# Project exclude paths
+/auction-item-boot/target/
+/auction-item-domain/target/
+/auction-item-service/target/
+/auction-item-store-jpa/target/
